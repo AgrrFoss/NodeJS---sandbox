@@ -1,5 +1,5 @@
-import Square from './square.js';
-import {SquareCircle} from "./squareCircle.js";
+import Square from './square.mjs';
+import {SquareCircle} from "./squareCircle.mjs";
 
 const o = new Square(4);
 const s = new SquareCircle(8);
