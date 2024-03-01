@@ -1,0 +1,16 @@
+{
+  "name": "project_04_process",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex0.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ex0.js",
+    "dev": "nodemon ex0.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

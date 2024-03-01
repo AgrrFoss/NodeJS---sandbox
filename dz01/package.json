@@ -1,0 +1,16 @@
+{
+  "name": "dz1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex0.js",
+  "type": "module",
+  "scripts": {
+    "start": "node in-out.js",
+    "dev": "nodemon in-out.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
