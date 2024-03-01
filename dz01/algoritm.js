@@ -6,13 +6,13 @@ export default function ([a, b, c]) {
         return false;
     } else if (d === 0) {
         const x = -b / (2 * a)
-        const result = [x];
+        const result = {'x': x};
         console.log('result: ',result);
         return result;
     } else {
         const x1 = (-b + (Math.sqrt(Math.pow(b, 2) - ( 4 * a * c))) / (2 * a));
         const x2 = (-b - (Math.sqrt(Math.pow(b, 2) - ( 4 * a * c))) / (2 * a));
-        const result = [x1,x2];
+        const result = {x1: x1, x2: x2};
         console.log('result: ',result);
         return result;
     }
