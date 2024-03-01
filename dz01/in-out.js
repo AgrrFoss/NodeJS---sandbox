@@ -16,11 +16,7 @@ if(numbers.length < 3) {
         process.exit(0);
     }
     else {
-<<<<<<< HEAD
         stderr.write('Дискриминант не имеет корней, уравнение не верно.\n');
-=======
-        stdout.write('Дискриминант не имеет корней, уравнение не верно.\n');
->>>>>>> origin/main
         process.exit(4);
     }
 }
