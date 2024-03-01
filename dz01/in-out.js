@@ -7,13 +7,16 @@ if(numbers.length < 3) {
     stdout.write('Для вычисления уравнения укажите 3 числа при запуске скрипта через пробел.\n');
     process.exit(1);
 } else {
-    stdout.write('Ты молодец, указал 3 числа.\n');
     const result = algorithm(numbers)
-    if (result){
-        stdout.write(`Результат решения: ${result}\n`);
+    if (result.x){
+        stdout.write(`Результат решения: x = ${result.x}\n`);
         process.exit(0);
-    } else {
-        stdout.write('Дискриминант не имеет корней, уравнение не верно.\n');
+    } else if(result.x1 & result.x2){
+        stdout.write(`Результат решения: x1 = ${result.x1}, x2 = ${result.x2}\n`);
+        process.exit(0);
+    }
+    else {
+        stderr.write('Дискриминант не имеет корней, уравнение не верно.\n');
         process.exit(4);
     }
 }
