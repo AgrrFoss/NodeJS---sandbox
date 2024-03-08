@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "В файлах",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node --env-file=.env_prod index.js",
+    "dev": "nodemon --env-file=.env_dev index.js"
   },
   "author": "",
   "license": "ISC",
