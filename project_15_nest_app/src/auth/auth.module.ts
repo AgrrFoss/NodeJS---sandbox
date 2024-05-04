@@ -10,8 +10,8 @@ import { Role } from '../roles/entities/role.entity';
 import { JwtModule } from '@nestjs/jwt';
 import { config } from 'dotenv';
 import { ConfigService } from '@nestjs/config';
+import { JwtStrategy } from './jwt.strategy';
 config();
-
 const configService = new ConfigService();
 @Module({
   imports: [
@@ -23,6 +23,6 @@ const configService = new ConfigService();
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService, UsersService, LocalStrategy]
+  providers: [AuthService, UsersService, LocalStrategy, JwtStrategy]
 })
 export class AuthModule {}

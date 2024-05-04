@@ -44,7 +44,7 @@ export class UsersService {
 
     try {
       const foundUser = await this.userRepo.findOne({
-        select: ['login', 'password'],
+        select: ['id', 'login', 'password'],
         where: { login: username }
       });
       if(await bcrypt.compare(password, foundUser.password)){
