@@ -6,8 +6,8 @@ import { UsersModule } from './users/users.module';
 import { RolesModule} from './roles/roles.module';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { SnakeNamingStrategy} from 'typeorm-naming-strategies';
-import { config } from 'dotenv';
 import { AuthModule } from './auth/auth.module';
+import { config } from 'dotenv';
 
 config();
 const configService = new ConfigService();
